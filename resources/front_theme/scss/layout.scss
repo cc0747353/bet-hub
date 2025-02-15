@@ -1,0 +1,224 @@
+@import "../scss/variables.scss";
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Lato-Regular.ttf) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Lato-Bold.ttf) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/Lato-Black.ttf) format("truetype");
+    font-display: swap;
+}
+body {
+    background-color: $dark;
+    font-family: "Lato";
+    font-weight: 400;
+}
+
+.header {
+    position: sticky;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: all .3s linear;
+    z-index: 99;
+    background-color: $secondary;
+
+    @media (max-width: 991px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .header-logo {
+        width: 50px;
+        height: 50px;
+
+        img {
+            @media (max-width:991px) {
+                max-width: 50px;
+            }
+        }
+    }
+
+    .dropdown {
+        .dropdown-toggle {
+            color: $gray-100;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+
+            &:hover {
+                color: $primary;
+            }
+
+            &:after {
+                border: 0;
+                margin-left: 10px;
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                -webkit-font-smoothing: antialiased;
+                display: var(--fa-display, inline-block);
+                content: "\f107";
+                vertical-align: middle;
+            }
+        }
+
+        .dropdown-item {
+            color: $gray-100;
+            padding: 8px 25px;
+
+            &:hover,
+            &:focus {
+                color: $primary;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.navbar {
+    padding:0;
+    @media (max-width: 991px) {
+        position: static;
+    }
+
+    .navbar-nav {
+        .nav-link {
+            color: $white;
+
+            &.active,&:focus,
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        @media (max-width: 991px) {
+            box-shadow: none;
+        }
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+    .navbar-collapse {
+        @media (max-width: 991px) {
+            position: absolute;
+            width: 100%;
+            top:100%;
+            background:$dark;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            max-width: 720px;
+            border-radius: $border-radius;
+        }
+
+        @media (max-width: 767px) and (min-width:576px) {
+            max-width: 516px;
+        }
+
+        @media (max-width:575px) {
+            width: calc(100% - 24px);
+        }
+
+        .navbar-nav {
+            @media (max-width: 991px) {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+body {
+    font-family: "Lato";
+    font-weight: 400;
+}
+
+footer {
+    .top-footer {
+        border-bottom: 1px solid $blue-200;
+
+        .footer-logo {
+            width:50px;
+            height:50px;
+        }
+        .email {
+            input {
+                padding:15px;
+                border: 1px solid $blue-100 ;
+                box-shadow: none !important;
+
+            }
+            ::placeholder {
+                color:$gray-100;
+            }
+            button {
+                right:5px;
+                top:5px;
+            }
+        }
+        .desc {
+            a {
+                color: $gray-100;
+                font-size: 14px;
+                display: block;
+                margin-bottom:15px;
+
+                &:hover , &:focus, &.active {
+                    color: $white;
+                }
+            }
+        }
+        .contact-us {
+            .img-icon {
+                width:19px;
+                height:16px;
+            }
+            .social-icons {
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 15px 0 0;
+                    min-width: 30px;
+                    width:30px;
+                    height:30px;
+                    border-radius:50px;
+                    background-color:$blue-200 ;
+
+                    i{
+                        color:$white;
+                    }
+                    &:hover ,&:active ,&:focus {
+                        background-color:$primary ;
+                    }
+                }
+            }
+        }
+    }
+    .last-line-footer {
+        padding:20px 0;
+        p {
+            a {
+                color:$primary;
+            }
+        }
+    }
+}

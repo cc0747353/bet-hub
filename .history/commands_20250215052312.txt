@@ -1,0 +1,159 @@
+php artisan db:seed --class=AllMatchSeeder
+
+how to use artisan command to create AllMatch seeder
+
+how to run AllMatch seeder class alone
+
+this is the deails of 100 matches i will arrange them according to their leagues and pass the league id
+
+It's tricky to give you completely accurate lists for all these leagues right now. Team lineups can change due to promotions, relegations, and transfers, and the final makeup of each league for the next season might not be fully set yet.
+
+However, I can give you a very good idea of the teams that are likely to be in each league, based on the current standings and recent seasons. Here are the lists, with the caveat that there might be a few small changes by the time the new season kicks off:
+
+Premier League
+    league_id = 9e36e694-365c-48eb-b203-c815c03d0bb5
+
+   Arsenal
+   Aston Villa
+   Bournemouth
+   Brentford
+   Brighton & Hove Albion
+   Burnley
+   Chelsea
+   Crystal Palace
+   Everton
+   Fulham
+   Liverpool
+   Luton Town
+   Manchester City
+   Manchester United
+   Newcastle United
+   Nottingham Forest
+   Sheffield United
+   Tottenham Hotspur
+   West Ham United
+   Wolverhampton Wanderers
+
+League One
+
+   league_id = 9e36e694-4682-4f6d-8535-c352af6adecc
+   Barnsley
+   Birmingham City
+   Blackpool
+   Bolton Wanderers
+   Bristol Rovers
+   Burton Albion
+   Cambridge United
+   Charlton Athletic
+   Cheltenham Town
+   Crawley Town
+   Exeter City
+   Fleetwood Town
+   Forest Hill Park
+   Huddersfield Town
+   Leyton Orient
+   Lincoln City
+   Mansfield Town
+   Northampton Town
+   Oxford United
+   Peterborough United
+   Port Vale
+   Reading
+   Rotherham United
+   Shrewsbury Town
+   Stevenage
+   Stockport County
+   Wigan Athletic
+   Wrexham
+   Wycombe Wanderers
+
+National League North
+   league_id = 9e36e694-47be-45ea-801b-a236e5cd0f12
+   Alfreton Town
+   Banbury United
+   Blyth Spartans
+   Boston United
+   Brackley Town
+   Buxton
+   Curzon Ashton
+   Darlington
+   Farsley Celtic
+   Gloucester City
+   Hereford
+   King's Lynn Town
+   Leamington
+   Peterborough Sports
+   Rushall Olympic
+   Scarborough Athletic
+   Southport
+   Spennymoor Town
+   Tamworth
+   Telford United
+
+National League
+    league_id  = 9e36e694-49c9-4137-a3b3-1d880b4b97f4
+   Aldershot Town
+   Altrincham
+   Barnet
+   Braintree Town
+   Bromley
+   Dagenham & Redbridge
+   Eastleigh
+   FC Halifax Town
+   Forest Green Rovers
+   Gateshead
+   Hartlepool United
+   Maidenhead United
+   Oldham Athletic
+   Rochdale
+   Solihull Moors
+   Southend United
+   Sutton United
+   Tamworth
+   Woking
+   Yeovil Town
+   York City
+
+League Two
+   league_id  = 9e36e694-4af9-4267-8654-18fa42300bf6
+   Accrington Stanley
+   AFC Wimbledon
+   Barrow
+   Bradford City
+   Bromley
+   Carlisle United
+   Colchester United
+   Crewe Alexandra
+   Doncaster Rovers
+   Gillingham
+   Grimsby Town
+   Harrogate Town
+   MK Dons
+   Morecambe
+   Newport County
+   Notts County
+   Port Vale
+   Salford City
+   Swindon Town
+   Tranmere Rovers
+   Walsall
+
+
+create 20 AllMatch each for them and use the leagues id as the league_id of the AllMatch
+
+
+
+Table Structure for AllMatch table
+
+league_id should be
+
+match_title we should shuffle teams in each league and pick out two  and then the match_title will be the team a name - team b name example in Premier League we can choose
+Arsenal as team_a and Aston Villa as team_b. wich will make match tittle Arsenal - Aston Villa
+
+then fill in team_a and team_b
+
+match_start should be plus 30minutes from now
+start_from should be 24hours behind now
+end_at should be 130minutes from now
+status should be 1
+is_locked should be false

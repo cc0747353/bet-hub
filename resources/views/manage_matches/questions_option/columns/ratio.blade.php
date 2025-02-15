@@ -1,0 +1,1 @@
+{{ $row->dividend }} : {{ $row->divisor }}

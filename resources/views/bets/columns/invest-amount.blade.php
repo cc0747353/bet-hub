@@ -1,0 +1,1 @@
+{{getCurrencyIcon().' '.$row->amount}}

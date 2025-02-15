@@ -1,0 +1,28 @@
+@import "../scss/variables.scss";
+.get-in-touch {
+
+
+form {
+    .form-control {
+        padding: 15px;
+        font-size: 18px;
+        color: $gray-100 !important;
+        border: 1px solid $blue-300;
+        border-radius: 10px;
+        background-color: transparent !important;
+        &:focus {
+            border: 1px solid $blue-300;
+            outline: 0;
+            box-shadow:none;
+        }
+        @media (max-width:768px) {
+        font-size: 16px;
+        padding: 12px;
+        }
+    }
+    ::placeholder {
+        color: $gray-100;
+    }
+}
+
+}

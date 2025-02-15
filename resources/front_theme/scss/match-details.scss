@@ -1,0 +1,91 @@
+@import "../scss/variables.scss";
+
+.categories-section {
+
+.categories-box {
+        padding:20px;
+
+    .categoires-details {
+        border-radius: 5px;
+        background-color: $blue-200;
+
+    
+    .flag {
+        width:60px;
+        height:60px;
+        min-width:60px;
+    }
+}
+.categoires-info {
+    a {
+    
+        &:hover , &:focus , &:active, &.active {
+            background-color: $primary !important;
+        }
+    }
+}
+}
+
+.betslip-box {
+    a {
+        top: 22px;
+        right: 20px;
+    }
+    .nav-tabs{
+        .nav-link{
+            padding: 10px;
+            color: $gray-100;
+    background-color: $blue-200 ;
+            &.active {
+                color: $white;
+                background-color: $primary;
+                border-color: $primary;
+                border-radius: 0;
+            }
+        }
+    }
+    .tab-content {
+        .tab-pane {
+            padding:10px;
+            a{
+              
+    border-radius: 10px;
+
+    padding: 14px 15px;
+    border: 1px solid $blue-100;
+            }
+            .desc {
+                .remove {
+width:24px;
+height:24px;
+min-width:24px;
+border:1px solid $gray-100; 
+border-radius: 30px;
+                }
+            }
+            .tag {
+                a {
+                    display: inline-block;
+                    max-width: 60px;
+    width: 60px;
+
+                    height: 32px;
+                    padding: 7px 16px;
+                    background-color: $blue-100;
+                    border-radius: 5px;
+                    &:hover , &:focus , &:active, &.active {
+                        background-color: $primary !important;
+                    }
+                }
+            }
+        }
+    }
+    .betslip {
+        .betslip-image {
+            min-width:100px;
+            width:100px;
+            height:58px;
+        }
+    }
+}
+}

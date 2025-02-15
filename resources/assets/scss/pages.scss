@@ -1,0 +1,228 @@
+.button-navigation-img {
+    height: 40px;
+    width: 360px;
+    max-width: 360px;
+}
+
+.table-style-img {
+    height: 40px;
+    width: 360px;
+    max-width: 360px;
+}
+
+.loginImg {
+    max-width: 90px !important;
+    height: auto !important;
+}
+
+.avatar-100 {
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+}
+
+.splash-preview .card-body {
+    height: 500px;
+}
+
+.splash-preview-img {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+}
+
+.avatar-40 {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+}
+
+.customColor {
+    height: 45px;
+    background: #f7f9ff;
+    margin-top: 10px;
+    line-height: 45px;
+    border: 1px solid #deeaff;
+}
+
+.gradientColor {
+    height: 45px;
+    background: #f7f9ff;
+    margin-top: 10px;
+    line-height: 45px;
+    border: 1px solid #deeaff;
+}
+
+.progress-bar-40 {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+}
+.iti--separate-dial-code{
+    width: 100%;
+}
+.main-payment {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .payment-section {
+        box-shadow: 2px 0 8px 2px #dfdbdb;
+
+        .payment-heading {
+            @media (max-width: 576px) {
+                width: 100%;
+                text-align: center;
+            }
+
+            .payment-title {
+                font-size: 67px;
+                font-weight: bold;
+                color: #f56758;
+
+                @media (max-width: 992px) {
+                    font-size: 55px;
+                }
+                @media (max-width: 668px) {
+                    font-size: 45px;
+                }
+            }
+
+            .payment-text {
+                font-size: 30px;
+                color: #595957;
+                font-weight: 600;
+
+                @media (max-width: 992px) {
+                    font-size: 25px;
+                }
+                @media (max-width: 668px) {
+                    font-size: 20px;
+                }
+            }
+
+            .payment-btn {
+                background: #f68880;
+                color: white;
+            }
+        }
+    }
+}
+.main-payment-success {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .payment-head {
+        padding: 50px;
+        box-shadow: 2px 0 8px 2px #ededed;
+        border-radius: 10px;
+        background: #fafcff;
+
+        @media (max-width: 455px) {
+            padding: 20px;
+        }
+
+        .payment-details {
+            padding: 30px;
+
+            @media (max-width: 350px) {
+                padding: 10px;
+            }
+
+            .payment-info {
+                text-align: center;
+
+                .payment-icon {
+                    font-size: 50px;
+                    color: #46ceac;
+                }
+
+                .payment-title {
+                    color: #46ceac;
+
+                    @media (max-width: 992px) {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+        .payment-text {
+            color: #a2a8bb;
+        }
+
+        .payment-img {
+            padding-left: 100px;
+
+            @media (max-width: 768px) {
+                display: none;
+                padding-left: 0;
+            }
+        }
+    }
+}
+.h-20px{
+    height: 20px;
+}
+.h-25px{
+    height: 25px;
+}
+
+.custom-2fa-card {
+    box-shadow: none;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.custom-2fa-card {
+    .card-header {
+        background: #485460;
+        text-align: center;
+        margin-left: -1px;
+        margin-right: -1px;
+        padding: 0.75rem 1.75rem !important;
+    }
+}
+
+.custom-2fa-card {
+    .card-body {
+       border: 1px solid;
+    }
+}
+
+.qr-image-height {
+    height: 245px !important;
+    width: 245px !important;    
+}
+
+.blogImage
+{
+    width: 285px !important;
+    height: 235px !important;
+}
+
+.mb-32 {
+    margin-bottom: 8rem !important;
+}
+
+.w-40{
+    width: 40% !important;
+}
+
+.flatpickr-disabled{
+    color: lightgray !important;
+}
+
+.w-70px{
+    width: 70px !important;
+}
+.minw-120{
+    min-width: 120px !important;
+}
